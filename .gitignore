@@ -1,0 +1,22 @@
+# environment variables (contains real API keys / secrets)
+.env
+.env.production
+.env.*
+!.env.example
+
+# build artifacts / dependencies
+app/dist/
+app/.astro/
+app/node_modules/
+**/node_modules/
+
+# OS / editor
+.DS_Store
+.idea/
+
+# rendered output (regenerate from scripts/)
+output/
+
+# never commit the full database dump - use database/schema.sql instead
+*.sql
+!database/schema.sql
